@@ -1,0 +1,13 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 100vh;
+  /* margin: 4rem; */
+  /* background-image: url("./images/Paysage\ du\ Wisconsin.jpg"); */
+}
+
+button:hover {
+  filter: brightness(29%);
+  color: white;
+}
