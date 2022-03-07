@@ -2,21 +2,30 @@ import React, {useState} from "react";
 import './History.css'
 let his = []
 function History({tries, hist}) {
-    his.push(...hist)
-    // Array.prototype.push.apply(his, hist)
 
-    if (his[6] !== ""){
-        for (let k = 6; k <= 6*tries; k= k+6) {
-           his.splice(k, 6)
+    console.log("this is b4 " + tries)
+
+    if (tries === 0) {
+        for (let k = 0; k <= 5   ; k++) {
+                his[k] = hist[k] 
         }
     }
-console.log(tries)
+
+    else if (tries >= 1) {
+        for (let f = tries*6; f <= (tries *12) - 1   ; f++) {
+                his[f] = hist[f - (6*tries)]
+        }
+    }
+    
+
+    
+
 console.log(his)
 
     return (
         <div className="history">
             <div id="board-container">
-      {Array.from({length: 6 * tries}).map((_, i) =>{
+      {Array.from({length: 6 * (tries+1)}).map((_, i) =>{
           for (let k = 4; k < 400; k= k+6) {
             if (k === i|| k+1 === i){
                 return <div className="guessed square estimated" key={i}>{his[i]}</div>
