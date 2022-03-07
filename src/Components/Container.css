@@ -4,7 +4,9 @@
   width: 100vw;
   height: 100vh;
   /* margin: 4rem; */
-  /* background-image: url("./images/Paysage\ du\ Wisconsin.jpg"); */
+  /* background-image: url("./images/MAYA.jpg"); */
+  background-color: #f9d7ce;
+  background-size: contain;
 }
 
 button:hover {

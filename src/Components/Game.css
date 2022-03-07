@@ -22,7 +22,9 @@ button {
 }
 .square {
   aspect-ratio: 1/1;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-weight: 900;
 }
 .estimated {
   background-color: gray;
@@ -46,6 +48,12 @@ button {
   display: none;
   flex-direction: row;
   gap: 2px;
+}
+
+.key {
+  border: 3px black solid;
+  border-radius: 10%;
+  font-size: 1.2rem;
 }
 
 #one {
@@ -114,6 +122,19 @@ button {
 #zero {
   background-image: url(./images/Presentation1/Slide10.JPG);
   background-size: cover;
-  /* color: black; */
-  font-weight: 9000;
+  color: black;
+  font-weight: 900;
+}
+
+#del {
+  background-image: url(./images/red.jpg);
+  background-size: cover;
+  color: white;
+  font-weight: 900;
+}
+#ent {
+  background-image: url(./images/green.jpg);
+  background-size: cover;
+  color: black;
+  font-weight: 900;
 }

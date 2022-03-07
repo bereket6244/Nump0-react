@@ -4,37 +4,7 @@ import './Game.css'
 import NumPad from "./NumPad";
 
 function Game({ranNum, setTrial, setHist}) {
-
-    useEffect(() => {
-        document.addEventListener('keypress', handleKeyPress)
-        // return () =>document.removeEventListener('keypress')
-    })
-
-    function handleKeyPress(e) {
-        if (e.key === "Enter") {
-            submitGuess()
-            return
-        }
     
-        if (e.key === "Backspace" || e.key === "Delete") {
-            deleteKey()
-            return
-        }
-    
-        if (e.key.match(/^[0-9]/)){
-            pressKey(e.key)
-            return
-        }
-    
-        if (e.key === "h" || e.key === "H"){
-            pressHistory()
-            return
-        }
-        if (e.key === "b" || e.key === "B") {
-            pressBack()
-            return
-        }
-    }
 
     
         const [amountTried, setAmountTried] = useState(0)

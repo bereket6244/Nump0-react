@@ -14,7 +14,7 @@
   gap: 5px;
   width: calc(fit-content + 2rem);
   overflow: auto;
-  background-color: aqua;
+  /* background-color: aqua; */
 }
 
 .guess,
